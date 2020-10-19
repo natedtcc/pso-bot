@@ -1,8 +1,5 @@
 package chats;
 
-import java.awt.event.*;
-import java.util.*;
-
 public class MessageParser {
 
   private Chats[] messages = new Chats[20];
@@ -10,7 +7,7 @@ public class MessageParser {
   /**
    * @return the message
    */
-  public String getMessages() {
+  public Chats[] getMessages() {
     return this.messages;
   }
 

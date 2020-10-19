@@ -1,9 +1,5 @@
 package chats;
 
-import java.io.*;
-import java.util.*;
-import java.util.stream.Stream;
-
 public class ChatTester {
 
   public static void main(String[] args) {
@@ -12,11 +8,12 @@ public class ChatTester {
     // Create new parser
     MessageParser parser = new MessageParser();
     // Create 2d array for holding parsed messages
-    String[][] chats = parser.parseMessages();
+    String[][] chats = null;
 
     // Read the chats from the handler and pass to
     // the parser
     parser.setMessages(handler.readChats());
+    chats = parser.parseMessages();
     chats = parser.parseMessages();
 
     // Print test

@@ -1,8 +1,8 @@
 #    <center> PSO Bot
 
 ___
-<br/>
-The purpose of this project is to create a bot that can "communicate" or "interact" with streamers who are watching RetrogradeX's Phantasy Star Online livestream. Not just any bot, however, because this bot actually controls the in-game character seen on stream. his project utilizes the Java Robots lib and essentially automates keypresses so that the in-game character types them into chat.
+<br>
+The purpose of this project is to create a bot that can "communicate" or "interact" with streamers who are watching RetrogradeX's Phantasy Star Online livestream. Not just any bot, however, because this bot actually controls the in-game character seen on stream. his project utilizes the Java Robots lib and essentially automates keypresses so that the in-game character types them into chat.<br>
 
 Currently, it can read a textfile containing strings and newlines, and parse them into an array of split string arrays. The purpose of this structure is so I can easily invoke certain keypresses through their respective characters, once I define said keypresses in a uniform way. This feature is strictly for passing chat messages from a textfile (or eventually, maybe Twitch chat) to the game.
 

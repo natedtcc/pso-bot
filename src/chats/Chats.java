@@ -1,4 +1,4 @@
-package PSOBot;
+package chats;
 
 // Chat obj class for defining messages
 

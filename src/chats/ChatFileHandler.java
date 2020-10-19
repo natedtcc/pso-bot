@@ -1,4 +1,4 @@
-package PSOBot;
+package chats;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

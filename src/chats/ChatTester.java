@@ -1,4 +1,4 @@
-package PSOBot;
+package chats;
 
 import java.io.*;
 import java.util.*;

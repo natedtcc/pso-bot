@@ -11,6 +11,7 @@ public class Typer {
 
 	  protected Robot robot;
 	  protected int sleepTime;
+	  protected char[] fKeys = {'╝','╜', '╛', '└'};
 	  
 
 	  /**
@@ -657,22 +658,22 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_BACK_SLASH);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case '➀':
+		      case '╝':
 			        this.robot.keyPress(KeyEvent.VK_F1);
 			        Thread.sleep(130);
 			        this.robot.keyRelease(KeyEvent.VK_F1);
 			        break;
-		      case '➁':
+		      case '╜':
 			        this.robot.keyPress(KeyEvent.VK_F2);
 			        Thread.sleep(130);
 			        this.robot.keyRelease(KeyEvent.VK_F2);
 			        break;
-		      case '➂':
+		      case '╛':
 			        this.robot.keyPress(KeyEvent.VK_F3);
 			        Thread.sleep(130);
 			        this.robot.keyRelease(KeyEvent.VK_F3);
 			        break;
-		      case '➃':
+		      case '└':
 			        this.robot.keyPress(KeyEvent.VK_F4);
 			        Thread.sleep(130);
 			        this.robot.keyRelease(KeyEvent.VK_F4);

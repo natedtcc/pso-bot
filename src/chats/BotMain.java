@@ -14,12 +14,14 @@ public class BotMain {
   public static void main(String[] args) throws UnsupportedEncodingException {
     clearScreen();
 	PrintWriter printWriter = new PrintWriter(System.out, true);
-    printWriter.println("\n\n\n\n██████╗ ███████╗ ██████╗     ██████╗  ██████╗ ████████╗\n"
+    printWriter.println(
+  "\n\n\n\n██████╗ ███████╗ ██████╗     ██████╗  ██████╗ ████████╗\n"
         + "██╔══██╗██╔════╝██╔═══██╗    ██╔══██╗██╔═══██╗╚══██╔══╝\n"
         + "██████╔╝███████╗██║   ██║    ██████╔╝██║   ██║   ██║   \n"
         + "██╔═══╝ ╚════██║██║   ██║    ██╔══██╗██║   ██║   ██║   \n"
         + "██║     ███████║╚██████╔╝    ██████╔╝╚██████╔╝   ██║   \n"
-        + "╚═╝     ╚══════╝ ╚═════╝     ╚═════╝  ╚═════╝    ╚═╝   " + "\n\n\t\t\t\t Nate Nasteff 2020\n\n");
+        + "╚═╝     ╚══════╝ ╚═════╝     ╚═════╝  ╚═════╝    ╚═╝   " + 
+    						"\n\n\t\t\t\t Nate Nasteff 2020\n\n");
 
     int choice = 1;
     boolean runs = true;

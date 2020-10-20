@@ -1,4 +1,4 @@
-package chats;
+﻿package chats;
 
 import java.util.*;
 
@@ -15,7 +15,7 @@ public class TypeTester {
     test_str[4] = new String[] { ",", ".", "/", "\\", ";", ":", "\"", "\'", "\\|", "~", "`", ">", "\n", "/" };
 
     ChatTyper typetest = new ChatTyper();
-    typetest.type(test_str);
+    typetest.typeChats(test_str);
 
   }
 

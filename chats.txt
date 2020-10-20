@@ -1,14 +1,13 @@
-¥
+F1
 Hello and welcome!
-£
+F2
 RAGOL MEMORIES
-£
+F2
 Thanks for checking  out the stream :)
-¥
+F3
 Enjoy the sounds of Phantasy Star Online
-£
+F1
 COMMING SOON: Warping!
-€
+F3
 WELCOME HUNTERS!
-¢
-
+F4

@@ -1,4 +1,4 @@
-package chats;
+﻿package chats;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -48,7 +48,7 @@ public class ChatBot implements Runnable {
         this.chats = parser.parseMessages();
 
         // Output chats to keyboard
-        this.bot.type(chats);
+        this.bot.typeChats(chats);
 
     } 
       }

@@ -1,4 +1,4 @@
-
+﻿
 package chats;
 
 import java.awt.event.KeyEvent;
@@ -11,7 +11,6 @@ public class Typer {
 
 	  protected Robot robot;
 	  protected int sleepTime;
-	  protected char[] fKeys = {'╝','╜', '╛', '└'};
 	  
 
 	  /**
@@ -28,141 +27,141 @@ public class Typer {
 	    this.sleepTime = sleepTime;
 	  }
 	
-	  public void type(char character) throws InterruptedException, AWTException {
+	  public void type(String character) throws InterruptedException, AWTException {
 		  this.robot = new Robot();
 		    switch (character) {
 
-		      case 'a':
+		      case "a":
 		        this.robot.keyPress(KeyEvent.VK_A);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_A);
 		        break;
-		      case 'b':
+		      case "b":
 		        this.robot.keyPress(KeyEvent.VK_B);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_B);
 		        break;
-		      case 'c':
+		      case "c":
 		        this.robot.keyPress(KeyEvent.VK_C);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_C);
 		        break;
-		      case 'd':
+		      case "d":
 		        this.robot.keyPress(KeyEvent.VK_D);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_D);
 		        break;
-		      case 'e':
+		      case "e":
 		        this.robot.keyPress(KeyEvent.VK_E);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_E);
 		        break;
-		      case 'f':
+		      case "f":
 		        this.robot.keyPress(KeyEvent.VK_F);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_F);
 		        break;
-		      case 'g':
+		      case "g":
 		        this.robot.keyPress(KeyEvent.VK_G);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_G);
 		        break;
-		      case 'h':
+		      case "h":
 		        this.robot.keyPress(KeyEvent.VK_H);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_H);
 		        break;
-		      case 'i':
+		      case "i":
 		        this.robot.keyPress(KeyEvent.VK_I);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_I);
 		        break;
-		      case 'j':
+		      case "j":
 		        this.robot.keyPress(KeyEvent.VK_J);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_J);
 		        break;
-		      case 'k':
+		      case "k":
 		        this.robot.keyPress(KeyEvent.VK_K);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_K);
 		        break;
-		      case 'l':
+		      case "l":
 		        this.robot.keyPress(KeyEvent.VK_L);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_L);
 		        break;
-		      case 'm':
+		      case "m":
 		        this.robot.keyPress(KeyEvent.VK_M);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_M);
 		        break;
-		      case 'n':
+		      case "n":
 		        this.robot.keyPress(KeyEvent.VK_N);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_N);
 		        break;
-		      case 'o':
+		      case "o":
 		        this.robot.keyPress(KeyEvent.VK_O);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_O);
 		        break;
-		      case 'p':
+		      case "p":
 		        this.robot.keyPress(KeyEvent.VK_P);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_P);
 		        break;
-		      case 'q':
+		      case "q":
 		        this.robot.keyPress(KeyEvent.VK_Q);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_Q);
 		        break;
-		      case 'r':
+		      case "r":
 		        this.robot.keyPress(KeyEvent.VK_R);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_R);
 		        break;
-		      case 's':
+		      case "s":
 		        this.robot.keyPress(KeyEvent.VK_S);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_S);
 		        break;
-		      case 't':
+		      case "t":
 		        this.robot.keyPress(KeyEvent.VK_T);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_T);
 		        break;
-		      case 'u':
+		      case "u":
 		        this.robot.keyPress(KeyEvent.VK_U);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_U);
 		        break;
-		      case 'v':
+		      case "v":
 		        this.robot.keyPress(KeyEvent.VK_V);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_V);
 		        break;
-		      case 'w':
+		      case "w":
 		        this.robot.keyPress(KeyEvent.VK_W);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_W);
 		        break;
-		      case 'x':
+		      case "x":
 		        this.robot.keyPress(KeyEvent.VK_X);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_X);
 		        break;
-		      case 'y':
+		      case "y":
 		        this.robot.keyPress(KeyEvent.VK_Y);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_Y);
 		        break;
-		      case 'z':
+		      case "z":
 		        this.robot.keyPress(KeyEvent.VK_Z);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_Z);
 		        break;
-		      case 'A':
+		      case "A":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_A);
@@ -170,7 +169,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_A);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'B':
+		      case "B":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_B);
@@ -178,7 +177,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_B);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'C':
+		      case "C":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_C);
@@ -186,7 +185,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_C);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'D':
+		      case "D":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_D);
@@ -194,7 +193,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_D);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'E':
+		      case "E":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_E);
@@ -202,7 +201,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_E);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'F':
+		      case "F":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_F);
@@ -210,7 +209,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_F);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'G':
+		      case "G":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_G);
@@ -218,7 +217,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_G);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'H':
+		      case "H":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_H);
@@ -226,7 +225,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_H);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'I':
+		      case "I":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_I);
@@ -234,7 +233,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_I);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'J':
+		      case "J":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_J);
@@ -242,7 +241,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_J);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'K':
+		      case "K":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_K);
@@ -250,7 +249,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_K);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'L':
+		      case "L":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_L);
@@ -258,7 +257,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_L);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'M':
+		      case "M":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_M);
@@ -266,7 +265,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_M);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'N':
+		      case "N":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_N);
@@ -274,7 +273,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_N);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'O':
+		      case "O":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_O);
@@ -282,7 +281,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_O);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'P':
+		      case "P":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_P);
@@ -290,7 +289,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_P);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'Q':
+		      case "Q":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_Q);
@@ -298,7 +297,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_Q);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'R':
+		      case "R":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_R);
@@ -306,7 +305,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_R);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'S':
+		      case "S":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_S);
@@ -314,7 +313,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_S);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'T':
+		      case "T":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_T);
@@ -322,7 +321,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_T);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'U':
+		      case "U":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_U);
@@ -330,7 +329,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_U);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'V':
+		      case "V":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_V);
@@ -338,7 +337,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_V);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'W':
+		      case "W":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_W);
@@ -346,7 +345,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_W);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'X':
+		      case "X":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_X);
@@ -354,7 +353,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_X);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'Y':
+		      case "Y":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_Y);
@@ -362,7 +361,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_Y);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case 'Z':
+		      case "Z":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_Z);
@@ -370,72 +369,72 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_Z);
 		        robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case '`':
+		      case "`":
 		        robot.keyPress(KeyEvent.VK_BACK_QUOTE);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_BACK_QUOTE);
 		        break;
-		      case '0':
+		      case "0":
 		        this.robot.keyPress(KeyEvent.VK_0);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_0);
 		        break;
-		      case '1':
+		      case "1":
 		        this.robot.keyPress(KeyEvent.VK_1);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_1);
 		        break;
-		      case '2':
+		      case "2":
 		        this.robot.keyPress(KeyEvent.VK_2);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_2);
 		        break;
-		      case '3':
+		      case "3":
 		        this.robot.keyPress(KeyEvent.VK_3);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_3);
 		        break;
-		      case '4':
+		      case "4":
 		        this.robot.keyPress(KeyEvent.VK_4);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_4);
 		        break;
-		      case '5':
+		      case "5":
 		        this.robot.keyPress(KeyEvent.VK_5);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_5);
 		        break;
-		      case '6':
+		      case "6":
 		        this.robot.keyPress(KeyEvent.VK_6);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_6);
 		        break;
-		      case '7':
+		      case "7":
 		        this.robot.keyPress(KeyEvent.VK_7);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_7);
 		        break;
-		      case '8':
+		      case "8":
 		        this.robot.keyPress(KeyEvent.VK_8);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_8);
 		        break;
-		      case '9':
+		      case "9":
 		        this.robot.keyPress(KeyEvent.VK_9);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_9);
 		        break;
-		      case '-':
+		      case "-":
 		        this.robot.keyPress(KeyEvent.VK_MINUS);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_MINUS);
 		        break;
-		      case '=':
+		      case "=":
 		        this.robot.keyPress(KeyEvent.VK_EQUALS);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_EQUALS);
 		        break;
-		      case '!':
+		      case "!":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_1);
@@ -443,7 +442,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_1);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case '@':
+		      case "@":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_2);
@@ -451,7 +450,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_2);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case '#':
+		      case "#":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_3);
@@ -459,7 +458,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_3);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case '$':
+		      case "$":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_4);
@@ -467,7 +466,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_4);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case '^':
+		      case "^":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_5);
@@ -475,7 +474,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_5);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case '&':
+		      case "&":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_6);
@@ -483,7 +482,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_6);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case '*':
+		      case "*":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_7);
@@ -491,7 +490,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_7);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case '(':
+		      case "(":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_8);
@@ -499,7 +498,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_8);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case ')':
+		      case ")":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_9);
@@ -507,7 +506,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_9);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case '_':
+		      case "_":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_MINUS);
@@ -515,7 +514,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_1);
 		        this.robot.keyRelease(KeyEvent.VK_MINUS);
 		        break;
-		      case '+':
+		      case "+":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_EQUALS);
@@ -523,37 +522,37 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_EQUALS);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case '\t':
+		      case "\t":
 		        this.robot.keyPress(KeyEvent.VK_TAB);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_TAB);
 		        break;
-		      case '\n':
+		      case "\n":
 		        this.robot.keyPress(KeyEvent.VK_ENTER);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_ENTER);
 		        break;
-		      case '[':
+		      case "[":
 		        this.robot.keyPress(KeyEvent.VK_OPEN_BRACKET);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_OPEN_BRACKET);
 		        break;
-		      case ']':
+		      case "]":
 		        this.robot.keyPress(KeyEvent.VK_CLOSE_BRACKET);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_CLOSE_BRACKET);
 		        break;
-		      case '\\':
+		      case "\\":
 		        this.robot.keyPress(KeyEvent.VK_BACK_SLASH);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_BACK_SLASH);
 		        break;
-		      case ';':
+		      case ";":
 		        this.robot.keyPress(KeyEvent.VK_SEMICOLON);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_SEMICOLON);
 		        break;
-		      case ':':
+		      case ":":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_SEMICOLON);
@@ -561,40 +560,41 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_SEMICOLON);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case '\'':
+		      case "'":
 		        this.robot.keyPress(KeyEvent.VK_QUOTE);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_QUOTE);
 		        break;
-		      case '"':
+		      case "\"":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_QUOTE);
 		        Thread.sleep(130);
+		        
 		        this.robot.keyRelease(KeyEvent.VK_QUOTE);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case ',':
+		      case ",":
 		        this.robot.keyPress(KeyEvent.VK_COMMA);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_COMMA);
 		        break;
-		      case '.':
+		      case ".":
 		        this.robot.keyPress(KeyEvent.VK_PERIOD);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_PERIOD);
 		        break;
-		      case '/':
+		      case "/":
 		        this.robot.keyPress(KeyEvent.VK_SLASH);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_SLASH);
 		        break;
-		      case ' ':
+		      case " ":
 		        this.robot.keyPress(KeyEvent.VK_SPACE);
 		        Thread.sleep(130);
 		        this.robot.keyRelease(KeyEvent.VK_SPACE);
 		        break;
-		      case '~':
+		      case "~":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_BACK_QUOTE);
@@ -602,7 +602,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_BACK_QUOTE);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case '%':
+		      case "%":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_5);
@@ -610,7 +610,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_5);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case '<':
+		      case "<":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_COMMA);
@@ -618,7 +618,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_COMMA);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case '>':
+		      case ">":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_PERIOD);
@@ -626,7 +626,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_PERIOD);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case '?':
+		      case "?":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_SLASH);
@@ -634,7 +634,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_SLASH);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case '{':
+		      case "{":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_OPEN_BRACKET);
@@ -642,7 +642,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_OPEN_BRACKET);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case '}':
+		      case "}":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_CLOSE_BRACKET);
@@ -650,7 +650,7 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_CLOSE_BRACKET);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case '|':
+		      case "|":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_BACK_SLASH);
@@ -658,32 +658,32 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_BACK_SLASH);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
-		      case '¥':
+		      case "F1":
 			        this.robot.keyPress(KeyEvent.VK_F1);
 			        Thread.sleep(130);
 			        this.robot.keyRelease(KeyEvent.VK_F1);
 			        break;
-		      case '£':
+		      case "F2":
 			        this.robot.keyPress(KeyEvent.VK_F2);
 			        Thread.sleep(130);
 			        this.robot.keyRelease(KeyEvent.VK_F2);
 			        break;
-		      case '€':
+		      case "F3":
 			        this.robot.keyPress(KeyEvent.VK_F3);
 			        Thread.sleep(130);
 			        this.robot.keyRelease(KeyEvent.VK_F3);
 			        break;
-		      case '¢':
+		      case "F4":
 			        this.robot.keyPress(KeyEvent.VK_F4);
 			        Thread.sleep(130);
 			        this.robot.keyRelease(KeyEvent.VK_F4);
 			        break;
-		      case '➄':
+		      case "➄":
 			        this.robot.keyPress(KeyEvent.VK_F5);
 			        Thread.sleep(130);
 			        this.robot.keyRelease(KeyEvent.VK_F5);
 			        break;
-		      case '➅':
+		      case "➅":
 			        this.robot.keyPress(KeyEvent.VK_F6);
 			        Thread.sleep(130);
 			        this.robot.keyRelease(KeyEvent.VK_F6);

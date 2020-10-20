@@ -1,4 +1,4 @@
-package chats;
+﻿package chats;
 
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
@@ -10,18 +10,11 @@ public class BotMain {
     System.out.print("\u239A");
     System.out.flush();
   }
+  	
 
   public static void main(String[] args) throws UnsupportedEncodingException {
     clearScreen();
 	PrintWriter printWriter = new PrintWriter(System.out, true);
-    printWriter.println(
-  "\n\n\n\n██████╗ ███████╗ ██████╗     ██████╗  ██████╗ ████████╗\n"
-        + "██╔══██╗██╔════╝██╔═══██╗    ██╔══██╗██╔═══██╗╚══██╔══╝\n"
-        + "██████╔╝███████╗██║   ██║    ██████╔╝██║   ██║   ██║   \n"
-        + "██╔═══╝ ╚════██║██║   ██║    ██╔══██╗██║   ██║   ██║   \n"
-        + "██║     ███████║╚██████╔╝    ██████╔╝╚██████╔╝   ██║   \n"
-        + "╚═╝     ╚══════╝ ╚═════╝     ╚═════╝  ╚═════╝    ╚═╝   " + 
-    						"\n\n\t\t\t\t Nate Nasteff 2020\n\n");
 
     int choice = 1;
     boolean runs = true;

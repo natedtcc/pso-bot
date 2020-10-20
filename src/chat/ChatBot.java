@@ -25,7 +25,7 @@ public class ChatBot implements Runnable {
   // Initialiaze type bot and set sleep time
   private ChatTyper bot = new ChatTyper();
   
-  
+  // Set sleep time between messages
   public ChatBot(int sleepTime) {
     this.sleepTime = sleepTime;
   }

@@ -36,8 +36,7 @@ public class ChatTyper extends Typer{
           }
         }
         type("\n");
-        TimeUnit.SECONDS.sleep(10);
-//        TimeUnit.MINUTES.sleep(sleepTime);
+        TimeUnit.MINUTES.sleep(sleepTime);
       }
     } catch (AWTException e) {
       e.printStackTrace();

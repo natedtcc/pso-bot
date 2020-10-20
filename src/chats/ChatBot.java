@@ -21,7 +21,7 @@ public class ChatBot implements Runnable {
   private String[][] chats = new String[maxChats][MAX_LENGTH];
 
   // Initialiaze type bot and set sleep time
-  private Typer bot = new Typer();
+  private ChatTyper bot = new ChatTyper();
   
   
   public ChatBot(int sleepTime) {

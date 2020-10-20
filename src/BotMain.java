@@ -1,6 +1,8 @@
-﻿package chat;
+﻿
 
 import java.util.Scanner;
+
+import chat.ChatBot;
 
 public class BotMain {
 
@@ -20,7 +22,7 @@ public class BotMain {
 
   public static void main(String[] args) {
     clearScreen();
-System.out.println("Select an option:\n" + "1. " + options[0] + "2. " + options[2]);
+    System.out.println("Select an option:\n1. " + options[0] + "2. " + options[2]);
     while (runs) {
       choice = sc.nextInt();
       if (choice == 1 && !botRuns) {
@@ -28,14 +30,14 @@ System.out.println("Select an option:\n" + "1. " + options[0] + "2. " + options[
         choice = 0;
     	System.out.println("Chat bot starting in 30 seconds.\n");
         chatBot.start();
-        System.out.println("Select an option:\n" + "1. " + options[1] + "2. " + options[2]);
+        System.out.println("Select an option:\n1. " + options[1] + "2. " + options[2]);
       }
 
       if (choice == 1 && botRuns) {
         chatBot.stop();
         botRuns = false;
         choice = 0;
-        System.out.println("Select an option:\n" + "1. " + options[0] + "2. " + options[2]);
+        System.out.println("Select an option:\n1. " + options[0] + "2. " + options[2]);
       }
 
       if (choice == 2) {

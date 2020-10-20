@@ -1,6 +1,7 @@
-﻿package chats;
+﻿package test;
 
-import java.util.*;
+
+import chat.ChatTyper;
 
 public class TypeTester {
 

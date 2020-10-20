@@ -1,8 +1,10 @@
-﻿package chats;
+﻿package chat;
 
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.util.concurrent.TimeUnit;
+
+import util.Typer;
 
 public class ChatTyper extends Typer{
 	
@@ -49,7 +51,8 @@ public class ChatTyper extends Typer{
 	        return false;
 	    }
 	    try {
-	        double d = Double.parseDouble(strNum);
+	        @SuppressWarnings("unused")
+			double d = Double.parseDouble(strNum);
 	    } catch (NumberFormatException nfe) {
 	        return false;
 	    }

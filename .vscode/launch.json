@@ -1,0 +1,35 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Debug (Launch) - Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-BotMain<pso-bot>",
+      "request": "launch",
+      "mainClass": "chats.BotMain",
+      "projectName": "pso-bot"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-ChatTester<pso-bot>",
+      "request": "launch",
+      "mainClass": "chats.ChatTester",
+      "projectName": "pso-bot"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-TypeTester<pso-bot>",
+      "request": "launch",
+      "mainClass": "chats.TypeTester",
+      "projectName": "pso-bot"
+    }
+  ]
+}

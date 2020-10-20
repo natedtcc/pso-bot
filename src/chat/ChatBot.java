@@ -1,6 +1,8 @@
-﻿package chats;
+﻿package chat;
 
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import util.MessageParser;
 
 public class ChatBot implements Runnable {
 

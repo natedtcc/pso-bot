@@ -1,4 +1,4 @@
-﻿package chats;
+﻿package chat;
 
 // Chat obj class for defining messages
 

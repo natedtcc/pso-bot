@@ -1,4 +1,6 @@
-﻿package chats;
+﻿package test;
+import chat.ChatFileHandler;
+import util.MessageParser;
 
 public class ChatTester {
 
@@ -13,7 +15,6 @@ public class ChatTester {
     // Read the chats from the handler and pass to
     // the parser
     parser.setMessages(handler.readChats());
-    chats = parser.parseMessages();
     chats = parser.parseMessages();
 
     // Print test

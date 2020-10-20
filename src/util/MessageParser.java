@@ -1,4 +1,6 @@
-﻿package chats;
+﻿package util;
+
+import chat.Chats;
 
 public class MessageParser {
 

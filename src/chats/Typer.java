@@ -1,11 +1,9 @@
 package chats;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.concurrent.TimeUnit;
-import java.util.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.event.KeyEvent.*;
-import java.awt.Robot.*;
 
 public class Typer {
 

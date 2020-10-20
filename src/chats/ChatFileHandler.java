@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class ChatFileHandler {
 
-  private final String __FILEDIR__ = "C:\\Users\\nnast\\OneDrive\\Coding\\java\\pso\\PSOBot\\";
+  private final String __FILEDIR__ = System.getProperty("user.dir");
 
   // Max lines in the chat file is 20.
   private Chats[] chats = new Chats[20];

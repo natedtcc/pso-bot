@@ -1,16 +1,26 @@
 package chats;
 
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.Scanner;
 
 public class BotMain {
 
   public static void clearScreen() {
-    System.out.print("\033[H\033[2J");
+    System.out.print("\u239A");
     System.out.flush();
   }
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws UnsupportedEncodingException {
     clearScreen();
+	PrintWriter printWriter = new PrintWriter(System.out, true);
+    printWriter.println("\n\n\n\n██████╗ ███████╗ ██████╗     ██████╗  ██████╗ ████████╗\n"
+        + "██╔══██╗██╔════╝██╔═══██╗    ██╔══██╗██╔═══██╗╚══██╔══╝\n"
+        + "██████╔╝███████╗██║   ██║    ██████╔╝██║   ██║   ██║   \n"
+        + "██╔═══╝ ╚════██║██║   ██║    ██╔══██╗██║   ██║   ██║   \n"
+        + "██║     ███████║╚██████╔╝    ██████╔╝╚██████╔╝   ██║   \n"
+        + "╚═╝     ╚══════╝ ╚═════╝     ╚═════╝  ╚═════╝    ╚═╝   " + "\n\n\t\t\t\t Nate Nasteff 2020\n\n");
+
     int choice = 1;
     boolean runs = true;
     Scanner sc = new Scanner(System.in);
@@ -21,7 +31,7 @@ public class BotMain {
     while (runs) {
       choice = sc.nextInt();
       if (choice == 1 && !started) {
-    	System.out.println("Chat bot starting in 30 seconds.\n");
+        System.out.println("Chat bot starting in 30 seconds.\n");
         chatBot.start();
         System.out.println("Select an option:\n" + "1. " + options[1] + "2. " + options[2]);
       }
@@ -31,7 +41,7 @@ public class BotMain {
       }
 
       if (choice == 2) {
-        clearScreen();
+
         System.out.println("\n\n\n\nSee ya..\n");
         sc.close();
         runs = false;

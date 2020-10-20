@@ -3,6 +3,7 @@
 <br>
 The purpose of this project is to create a bot that can "communicate" or "interact" with streamers who are watching RetrogradeX's Phantasy Star Online livestream. Not just any bot, however, because this bot actually controls the in-game character seen on stream. his project utilizes the Java Robots lib and essentially automates keypresses so that the in-game character types them into chat.<br>
 
+
 Currently, it can read a textfile containing strings and newlines, and parse them into an array of split string arrays. The purpose of this structure is so I can easily invoke certain keypresses through their respective characters, once I define said keypresses in a uniform way. This feature is strictly for passing chat messages from a textfile (or eventually, maybe Twitch chat) to the game.
 
 In the future, I would love to implement the [Java-Twirk](https://github.com/Gikkman/Java-Twirk) lib that will allow me to create custom chat commands that will trigger in game responses (ie. the command "!teleport forest" would teleport the character to Forest 1) as well as passing certain chats from users directly to the game. I would also like to implement a feature that creates travel routes for the character.

@@ -1,23 +1,23 @@
-﻿package chat;
+﻿package util;
 
-// Chat obj class for defining messages
+// Base class for all inputs received
 
-public class Chats {
+public class Input {
   
-  private String message;
+  private String input;
 
   /**
    * @return the message
    */
   public String getMessage() {
-    return this.message;
+    return this.input;
   }
 
   /**
    * @param message the message to set
    */
   public void setMessage(String message) {
-    this.message = message;
+    this.input = message;
   }
 
 }

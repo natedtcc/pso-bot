@@ -4,14 +4,16 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
+import util.Input;
+
 public class ChatFileHandler {
 
   private final String __FILEDIR__ = System.getProperty("user.dir");
 
   // Max lines in the chat file is 20.
-  private Chats[] chats = new Chats[20];
+  private Input[] chats = new Input[20];
 
-  public Chats[] readChats() {
+  public Input[] readChats() {
     int i = 0;
     BufferedReader br = null;
     try {
@@ -19,7 +21,7 @@ public class ChatFileHandler {
 
       String line = "";
       while ((line = br.readLine()) != null) {
-        chats[i] = new Chats();
+        chats[i] = new Input();
         chats[i].setMessage(line);
         i++;
       }

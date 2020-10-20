@@ -1,22 +1,20 @@
 ﻿package util;
 
-import chat.Chats;
-
 public class MessageParser {
 
-  private Chats[] messages = new Chats[20];
+  private Input[] messages = new Input[20];
 
   /**
    * @return the message
    */
-  public Chats[] getMessages() {
+  public Input[] getMessages() {
     return this.messages;
   }
 
   /**
    * @param message the message to set
    */
-  public void setMessages(Chats[] messages) {
+  public void setMessages(Input[] messages) {
     this.messages = messages;
   }
 

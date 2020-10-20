@@ -34,6 +34,7 @@ public class BotMain {
       choice = sc.nextInt();
       if (choice == 1 && !botRuns) {
         botRuns = true;
+        choice = 0;
     	System.out.println("Chat bot starting in 30 seconds.\n");
         chatBot.start();
         System.out.println("Select an option:\n" + "1. " + options[1] + "2. " + options[2]);
@@ -42,6 +43,8 @@ public class BotMain {
       if (choice == 1 && botRuns) {
         chatBot.stop();
         botRuns = false;
+        choice = 0;
+        System.out.println("Select an option:\n" + "1. " + options[0] + "2. " + options[2]);
       }
 
       if (choice == 2) {
@@ -52,5 +55,4 @@ public class BotMain {
       }
     }
   }
-
 }

@@ -15,7 +15,7 @@ public class ChatFileHandler {
     int i = 0;
     BufferedReader br = null;
     try {
-      br = new BufferedReader(new FileReader(__FILEDIR__ + "chats.txt"));
+      br = new BufferedReader(new FileReader(__FILEDIR__ + "\\chats.txt"));
 
       String line = "";
       while ((line = br.readLine()) != null) {

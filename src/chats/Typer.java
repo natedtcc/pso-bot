@@ -1,6 +1,7 @@
 
 package chats;
 
+import java.awt.event.KeyEvent;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
@@ -656,6 +657,36 @@ public class Typer {
 		        this.robot.keyRelease(KeyEvent.VK_BACK_SLASH);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
+		      case '➀':
+			        this.robot.keyPress(KeyEvent.VK_F1);
+			        Thread.sleep(130);
+			        this.robot.keyRelease(KeyEvent.VK_F1);
+			        break;
+		      case '➁':
+			        this.robot.keyPress(KeyEvent.VK_F2);
+			        Thread.sleep(130);
+			        this.robot.keyRelease(KeyEvent.VK_F2);
+			        break;
+		      case '➂':
+			        this.robot.keyPress(KeyEvent.VK_F3);
+			        Thread.sleep(130);
+			        this.robot.keyRelease(KeyEvent.VK_F3);
+			        break;
+		      case '➃':
+			        this.robot.keyPress(KeyEvent.VK_F4);
+			        Thread.sleep(130);
+			        this.robot.keyRelease(KeyEvent.VK_F4);
+			        break;
+		      case '➄':
+			        this.robot.keyPress(KeyEvent.VK_F5);
+			        Thread.sleep(130);
+			        this.robot.keyRelease(KeyEvent.VK_F5);
+			        break;
+		      case '➅':
+			        this.robot.keyPress(KeyEvent.VK_F6);
+			        Thread.sleep(130);
+			        this.robot.keyRelease(KeyEvent.VK_F6);
+			        break;
 		      default:
 		        throw new IllegalArgumentException("Cannot type character " + character);
 
@@ -664,5 +695,4 @@ public class Typer {
 		  }
 
 	}
-
 

@@ -10,7 +10,7 @@ public class ChatTyper extends Typer{
 	
 
   public void typeChats(String[][] messages) {
-//	setSleepTime(5);
+
     try {
     	// Warmup, then start robot and create string for passing to typer
     	TimeUnit.SECONDS.sleep(5);

@@ -68,5 +68,5 @@ public class ChatBot implements Runnable {
    */
   public void setTime(int sleepTime) {
     this.sleepTime = sleepTime;
-}
+  }
 }

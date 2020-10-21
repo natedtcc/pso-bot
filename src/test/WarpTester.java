@@ -9,7 +9,7 @@ public class WarpTester {
 
 		MemTest memtest = new MemTest();
 	
-		memtest.warpMe();
+		memtest.start();
 	}
 
 }

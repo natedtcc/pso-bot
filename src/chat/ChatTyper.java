@@ -45,6 +45,31 @@ public class ChatTyper extends Typer{
     }
   }
   
+  
+  public void typeChats(String[] message) {
+
+	    try {
+	    	// Warmup, then start robot and create string for passing to typer
+	    	TimeUnit.SECONDS.sleep(5);
+	        this.robot = new Robot();
+	        String key = new String();
+	        
+	        // Iterate over each array, which contains arrays of strings
+	      for (int i = 0; i < message.length && message[i] != null; i++) {
+	        	key = message[i]; 
+	    	  type(key);
+	          }
+	        
+	        type("\n");
+	        TimeUnit.SECONDS.sleep(sleepTime);
+	      
+	    } catch (AWTException e) {
+	      e.printStackTrace();
+	    } catch (InterruptedException a) {
+	      a.printStackTrace();
+	    }
+	  }
+  
   public static boolean isNumeric(String strNum) {
 	    if (strNum == null) {
 	        return false;

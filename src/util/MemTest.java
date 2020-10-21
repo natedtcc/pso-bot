@@ -35,6 +35,10 @@ public class MemTest implements Runnable {
 	}
 
 	public void start() {
+    	for (int i=0; i < LOC_NAMES.length; i++) {
+    		input[i] = new Input();
+    		input[i].setMessage(LOC_NAMES[1]);
+    	}
 		warpBot = new Thread(this);
 		warpBot.start();
 	}
@@ -46,13 +50,8 @@ public class MemTest implements Runnable {
 	public void run() {
 	    RUNNING.set(true);
 	    while (RUNNING.get()) {
-		for (int i=0; i < LOCATIONS.length; i++) {
-			input[i] = new Input();
-			input[i].setMessage(LOC_NAMES[1]);
-		}
 		
-		typer.setSleepTime(1);
-		
+
 		parser.setMessages(input);
 		typer.typeChats(parser.parseMessages());
 		
@@ -69,6 +68,7 @@ public class MemTest implements Runnable {
 		// Close the tools object
 		tools.close();
 		
-	}
+	    }
 
-}}
+	}
+}

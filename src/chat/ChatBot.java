@@ -43,7 +43,6 @@ public class ChatBot implements Runnable {
     RUNNING.set(true);
     while (RUNNING.get()) {
     		 
-    	this.bot.setSleepTime(sleepTime);
     	// Read the chats from the handler and pass to
         // the parser
         this.parser.setMessages(handler.readChats());

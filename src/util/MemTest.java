@@ -23,8 +23,8 @@ public class MemTest implements Runnable  {
 	private final long LOC_ADDRESS = 0x78F5A4;
 	private final int[] LOC_INT = { 15, 0, 1, 2, 11, 3, 4, 5, 12, 6, 7, 13, 8, 9, 10, 14 };
 	private Thread warpBot;
-	private Input[] input = new Input[15];
-	private ChatTyper typer;
+	private Input[] input = new Input[16];
+	private ChatTyper typer = new ChatTyper();
 	private MessageParser parser = new MessageParser();
 	private WGTools tools = new WGTools();
 
@@ -33,7 +33,7 @@ public class MemTest implements Runnable  {
 	public void start() {
     	for (int i=0; i < LOC_NAMES.length; i++) {
     		input[i] = new Input();
-    		input[i].setMessage(LOC_NAMES[1]);
+    		input[i].setMessage(LOC_NAMES[i]);
     	}
 		warpBot = new Thread(this);
 		warpBot.start();
@@ -68,7 +68,7 @@ public class MemTest implements Runnable  {
 			// Game reverts warp address int back to 0 after a successful warp
 			tools.writeInt(WARP_ADDRESS, 1);
 			try {
-				TimeUnit.MINUTES.sleep(15);
+				TimeUnit.SECONDS.sleep(15);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

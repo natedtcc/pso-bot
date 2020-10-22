@@ -12,8 +12,8 @@ public class BotMain {
     private static Scanner sc = new Scanner(System.in);
     private static boolean chatbotRuns = false;
     private static boolean warpbotRuns = false;
-    private static ChatBot chatBot = new ChatBot(2);
-    private static WarpBot warpBot = new WarpBot(1);
+    private static ChatBot chatBot = new ChatBot(7);
+    private static WarpBot warpBot = new WarpBot(19);
     private static String[] options = new String[] { "Start the chat bot.\n", "Stop the chat bot.\n", "Start the warp bot\n", "Stop the warp bot\n", "Quit the program.\n" };
     
 	

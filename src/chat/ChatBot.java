@@ -27,12 +27,13 @@ public class ChatBot implements Runnable {
   
   // Set sleep time between messages
   public ChatBot(int sleepTime) {
-    this.sleepTime = sleepTime;
+    this.bot.setSleepTime(sleepTime);
   }
 
   public void start() {
     chatbot = new Thread(this);
     chatbot.start();
+    
   }
 
   public void stop() {

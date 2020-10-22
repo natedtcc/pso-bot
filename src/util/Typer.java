@@ -26,6 +26,7 @@ public class Typer {
 	    this.sleepTime = sleepTime;
 	  }
 	
+
 	  public void type(String character) throws InterruptedException, AWTException {
 		  this.robot = new Robot();
 		    switch (character) {

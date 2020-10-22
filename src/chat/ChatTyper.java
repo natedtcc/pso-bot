@@ -9,11 +9,12 @@ import util.Typer;
 public class ChatTyper extends Typer{
 	
 
+	// Type out chats stored in array of string arrays
   public void typeChats(String[][] messages) {
 
     try {
     	// Warmup, then start robot and create string for passing to typer
-    	TimeUnit.SECONDS.sleep(5);
+    	TimeUnit.SECONDS.sleep(30);
         this.robot = new Robot();
         String key = new String();
         
@@ -45,12 +46,12 @@ public class ChatTyper extends Typer{
     }
   }
   
-  
+  // Type out chats in a string array
   public void typeChats(String[] message) {
 
 	    try {
 	    	// Warmup, then start robot and create string for passing to typer
-	    	TimeUnit.SECONDS.sleep(5);
+	    	
 	        this.robot = new Robot();
 	        String key = new String();
 	        
@@ -61,7 +62,7 @@ public class ChatTyper extends Typer{
 	          }
 	        
 	        type("\n");
-	        TimeUnit.SECONDS.sleep(sleepTime);
+	        TimeUnit.SECONDS.sleep(5);
 	      
 	    } catch (AWTException e) {
 	      e.printStackTrace();

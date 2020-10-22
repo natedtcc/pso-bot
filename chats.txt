@@ -11,3 +11,4 @@ COMMING SOON: Warping!
 F3
 WELCOME HUNTERS!
 F4
+Hey, I'm a bot :)

@@ -1,13 +1,13 @@
 package test;
 
-import util.MemTest;
+import util.WarpBot;
 
 public class WarpTester {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		MemTest memtest = new MemTest();
+		WarpBot memtest = new WarpBot(30, 19);
 	
 		memtest.start();
 	}

@@ -8,7 +8,7 @@ import com.wgtools.mem.WGTools;
 
 import chat.ChatTyper;
 
-public class MemTest implements Runnable  {
+public class WarpBot implements Runnable  {
 
 	// Define mem addresses that effect character warping,
 	// setting the destination before warping, and an array
@@ -22,6 +22,7 @@ public class MemTest implements Runnable  {
 	private final long WARP_ADDRESS = 0x6FCAB0;
 	private final long LOC_ADDRESS = 0x78F5A4;
 	private final int[] LOC_INT = { 15, 0, 1, 2, 11, 3, 4, 5, 12, 6, 7, 13, 8, 9, 10, 14 };
+	private int warpTime;
 	private Thread warpBot;
 	private Input[] input = new Input[16];
 	private ChatTyper typer = new ChatTyper();
@@ -30,6 +31,11 @@ public class MemTest implements Runnable  {
 
 	// Set sleep time between messages
 
+	public WarpBot(int warpTime) {
+		typer.setSleepTime(5);
+		this.warpTime = warpTime;
+	}
+	
 	public void start() {
     	for (int i=0; i < LOC_NAMES.length; i++) {
     		input[i] = new Input();
@@ -51,9 +57,12 @@ public class MemTest implements Runnable  {
 		tools.open(JnaUtils.getWinHwnd("PSO for PC").get(0));
 		String[][] messages = new String[16][40];
 	    RUNNING.set(true);
-	    
+	    try {
+	    	// Warm up..
+	    	TimeUnit.SECONDS.sleep(30);
 	    while (RUNNING.get()) {
-		
+	    	
+	    		
 
 		parser.setMessages(input);
 		messages = parser.parseMessages();
@@ -67,15 +76,17 @@ public class MemTest implements Runnable  {
 			// Write a 1 to the address in memory (represents a boolean - will warp if 1)
 			// Game reverts warp address int back to 0 after a successful warp
 			tools.writeInt(WARP_ADDRESS, 1);
-			try {
-				TimeUnit.SECONDS.sleep(15);
-			} catch (InterruptedException e) {
+			TimeUnit.MINUTES.sleep(this.warpTime);
+		}
+			
+	    }
+	    	} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		}
+		
 
-	    }
+	    
 
 	}
 }

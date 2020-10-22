@@ -493,17 +493,17 @@ public class Typer {
 		      case "(":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
-		        this.robot.keyPress(KeyEvent.VK_8);
+		        this.robot.keyPress(KeyEvent.VK_9);
 		        Thread.sleep(130);
-		        this.robot.keyRelease(KeyEvent.VK_8);
+		        this.robot.keyRelease(KeyEvent.VK_9);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
 		      case ")":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
 		        Thread.sleep(130);
-		        this.robot.keyPress(KeyEvent.VK_9);
+		        this.robot.keyPress(KeyEvent.VK_0);
 		        Thread.sleep(130);
-		        this.robot.keyRelease(KeyEvent.VK_9);
+		        this.robot.keyRelease(KeyEvent.VK_0);
 		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
 		      case "_":
@@ -511,8 +511,8 @@ public class Typer {
 		        Thread.sleep(130);
 		        this.robot.keyPress(KeyEvent.VK_MINUS);
 		        Thread.sleep(130);
-		        this.robot.keyRelease(KeyEvent.VK_1);
 		        this.robot.keyRelease(KeyEvent.VK_MINUS);
+		        this.robot.keyRelease(KeyEvent.VK_SHIFT);
 		        break;
 		      case "+":
 		        this.robot.keyPress(KeyEvent.VK_SHIFT);
@@ -678,12 +678,12 @@ public class Typer {
 			        Thread.sleep(130);
 			        this.robot.keyRelease(KeyEvent.VK_F4);
 			        break;
-		      case "➄":
+		      case "F5":
 			        this.robot.keyPress(KeyEvent.VK_F5);
 			        Thread.sleep(130);
 			        this.robot.keyRelease(KeyEvent.VK_F5);
 			        break;
-		      case "➅":
+		      case "F6":
 			        this.robot.keyPress(KeyEvent.VK_F6);
 			        Thread.sleep(130);
 			        this.robot.keyRelease(KeyEvent.VK_F6);

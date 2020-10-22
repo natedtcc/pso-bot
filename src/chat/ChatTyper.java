@@ -31,13 +31,12 @@ public class ChatTyper extends Typer{
         	}
         	// Otherwise type individual keys
           else {
-        	  System.out.println(key);
         	 key = messages[i][j];
         	 type(key);
           }
         }
         type("\n");
-        TimeUnit.MINUTES.sleep(sleepTime);
+        TimeUnit.MINUTES.sleep(this.sleepTime);
       }
     } catch (AWTException e) {
       e.printStackTrace();

@@ -7,46 +7,8 @@ import java.util.concurrent.TimeUnit;
 import util.Typer;
 
 public class ChatTyper extends Typer{
-	
 
-	// Type out chats stored in array of string arrays
-  public void typeChats(String[][] messages) {
-
-    try {
-    	// Warmup, then start robot and create string for passing to typer
-    	TimeUnit.SECONDS.sleep(30);
-        this.robot = new Robot();
-        String key = new String();
-        
-        // Iterate over each array, which contains arrays of strings
-      for (int i = 0; i < messages.length && messages[i] != null; i++) {
-        for (int j = 0; j < messages[i].length && messages[i][j] != null; j++) {
-          
-        	// Check for function keys (F1, F2 etc)
-        	// If found, increment j to skip to the next array
-        	if (messages[i][j].contains("F") && isNumeric(messages[i][j+1])) {
-        	  key =  (messages[i][j] + messages[i][j+1]);
-        	  type(key);
-        	  j++;
-        	}
-        	// Otherwise type individual keys
-          else {
-        	 key = messages[i][j];
-        	 type(key);
-          }
-        }
-        type("\n");
-        TimeUnit.MINUTES.sleep(this.sleepTime);
-      }
-    } catch (AWTException e) {
-      e.printStackTrace();
-    } catch (InterruptedException a) {
-      a.printStackTrace();
-    }
-  }
-  
-  // Type out chats in a string array
-  public void typeChats(String[] message) {
+  public synchronized void typeChats(String[] message) {
 
 	    try {
 	    	// Warmup, then start robot and create string for passing to typer
@@ -54,13 +16,28 @@ public class ChatTyper extends Typer{
 	        this.robot = new Robot();
 	        String key = new String();
 	        
-	        // Iterate over each array, which contains arrays of strings
+	        // Iterate over a string array, which contains letters to be typed
 	      for (int i = 0; i < message.length && message[i] != null; i++) {
-	        	key = message[i]; 
+	    	  
+	    	  // Check for F1-F12 keys..
+	    	  if (message[i].contains("F") && isNumeric(message[i+1])) {
+	        	key = message[i] + message[i+1]; 
 	    	  type(key);
+	    	  i++;
+	    	  }
+	    	  
+	    	  // Otherwise send individual letters to type..
+	    	  else {
+	    		  key = message[i];
+	    		  type(key);
+	    	  }
 	          }
-	        
+	      // If the key length is less than 2 (for commands, function keys)
+	      // Send a new line once the typed string is fully sent
+	      
+	      if (key.length() < 2) {
 	        type("\n");
+	      }
 	        TimeUnit.SECONDS.sleep(5);
 	      
 	    } catch (AWTException e) {

@@ -16,7 +16,7 @@ public class TypeTester {
     test_str[4] = new String[] { ",", ".", "/", "\\", ";", ":", "\"", "\'", "\\|", "~", "`", ">", "\n", "/" };
 
     ChatTyper typetest = new ChatTyper();
-    typetest.typeChats(test_str);
+    typetest.typeChats(test_str[0]);
 
   }
 

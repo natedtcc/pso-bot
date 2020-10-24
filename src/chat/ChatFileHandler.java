@@ -10,8 +10,8 @@ public class ChatFileHandler {
 
   private final String __FILEDIR__ = System.getProperty("user.dir");
 
-  // Max lines in the chat file is 20.
-  private Input[] chats = new Input[20];
+  // Max lines in the chat file is 40
+  private Input[] chats = new Input[40];
 
   public Input[] readChats() {
     int i = 0;

@@ -16,8 +16,9 @@ public class WarpBot  {
 			"Warping to Ruins 1..", "Warping to Ruins 2..", "Warping to Ruins 3..", "Warping to Dark Falz.."
 			 };
 	
-	private final long WARP_ADDRESS = 0x6FCAB0;
-	private final long LOC_ADDRESS = 0x78F5A4;
+	private final long WARP_ACTION_ADDRESS = 0x6FCAB0;
+	private final long WARP_TO_ADDRESS = 0x78F5A4;
+	private final long CURRENT_LOC_ADDRESS = 0x732F74;
 	private final int[] LOC_INT = { 15, 0, 1, 2, 11, 3, 4, 5, 12, 6, 7, 13, 8, 9, 10, 14 };
 	private int currentLoc;
 	private Input[] input = new Input[16];
@@ -42,7 +43,7 @@ public class WarpBot  {
 		tools.open(JnaUtils.getWinHwnd("PSO for PC").get(0));
 		
 		// Check the current location based on index
-		currentLoc = tools.readInt(LOC_ADDRESS);
+		currentLoc = tools.readInt(CURRENT_LOC_ADDRESS);
 		int locIndex = 0;
 		for (int i=0; i<LOC_INT.length;i++) {
 			if (LOC_INT[i] == currentLoc) {
@@ -53,18 +54,18 @@ public class WarpBot  {
 		if (currentLoc == 14) {
 			locIndex=0;
 			typer.typeChats(messages[locIndex]);
-			tools.writeInt(LOC_ADDRESS, LOC_INT[locIndex]);
+			tools.writeInt(WARP_TO_ADDRESS, LOC_INT[locIndex]);
 		}
     	
 		else {
 			typer.typeChats(messages[locIndex+1]);
 		
 			// Write an int to address in memory (represents a location to warp to)
-			tools.writeInt(LOC_ADDRESS, LOC_INT[locIndex+1]);
+			tools.writeInt(WARP_TO_ADDRESS, LOC_INT[locIndex+1]);
 		}
 			// Write a 1 to the address in memory (represents a boolean - will warp if 1)
 			// Game reverts warp address int back to 0 after a successful warp
-			tools.writeInt(WARP_ADDRESS, 1);
+			tools.writeInt(WARP_ACTION_ADDRESS, 1);
 			
 		
 	    	// Reset the index once loop is finished

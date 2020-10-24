@@ -2,7 +2,7 @@
 
 public class MessageParser {
 
-  private Input[] messages = new Input[20];
+  private Input[] messages = new Input[40];
 
   /**
    * @return the message
@@ -24,7 +24,7 @@ public class MessageParser {
    * @return String[]
    */
   public String[][] parseMessages() {
-    String[][] parsed = new String[20][40];
+    String[][] parsed = new String[40][40];
     for (int i = 0; i < this.messages.length && this.messages[i] != null; i++) {
       parsed[i] = this.messages[i].getMessage().split("");
     }

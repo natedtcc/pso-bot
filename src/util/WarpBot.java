@@ -4,6 +4,7 @@ import com.wgtools.jna.JnaUtils;
 import com.wgtools.mem.WGTools;
 
 import chat.ChatTyper;
+import test.GameData;
 
 public class WarpBot  {
 
@@ -16,15 +17,10 @@ public class WarpBot  {
 			"Warping to Ruins 1..", "Warping to Ruins 2..", "Warping to Ruins 3..", "Warping to Dark Falz.."
 			 };
 	
-	private final long WARP_ACTION_ADDRESS = 0x6FCAB0;
-	private final long WARP_TO_ADDRESS = 0x78F5A4;
-	private final long CURRENT_LOC_ADDRESS = 0x732F74;
-	private final int[] LOC_INT = { 15, 0, 1, 2, 11, 3, 4, 5, 12, 6, 7, 13, 8, 9, 10, 14 };
-	private int currentLoc;
+	private GameData gamedata = new GameData();
 	private Input[] input = new Input[16];
 	private ChatTyper typer = new ChatTyper();
 	private MessageParser parser = new MessageParser();
-	private WGTools tools = new WGTools();
 	String[][] messages;
 
 	// Set sleep time between warps
@@ -40,13 +36,13 @@ public class WarpBot  {
 
 	public void warp() {
 		// Open PSO via window name
-		tools.open(JnaUtils.getWinHwnd("PSO for PC").get(0));
-		
+		gamedata.tools.open(JnaUtils.getWinHwnd("PSO for PC").get(0));
+		int currentLoc;
 		// Check the current location based on index
-		currentLoc = tools.readInt(CURRENT_LOC_ADDRESS);
+		currentLoc = gamedata.tools.readInt(gamedata.getCURRENT_LOC_ADDRESS());
 		int locIndex = 0;
-		for (int i=0; i<LOC_INT.length;i++) {
-			if (LOC_INT[i] == currentLoc) {
+		for (int i=0; i<gamedata.getLOC_INT().length;i++) {
+			if (gamedata.getLOC_INT()[i] == currentLoc) {
 				locIndex = i;
 				break;
 			}
@@ -54,25 +50,25 @@ public class WarpBot  {
 		if (currentLoc == 14) {
 			locIndex=0;
 			typer.typeChats(messages[locIndex]);
-			tools.writeInt(WARP_TO_ADDRESS, LOC_INT[locIndex]);
+			gamedata.tools.writeInt(gamedata.getWARP_TO_ADDRESS(), gamedata.getLOC_INT()[locIndex]);
 		}
     	
 		else {
 			typer.typeChats(messages[locIndex+1]);
 		
 			// Write an int to address in memory (represents a location to warp to)
-			tools.writeInt(WARP_TO_ADDRESS, LOC_INT[locIndex+1]);
+			gamedata.tools.writeInt(gamedata.getWARP_TO_ADDRESS(), gamedata.getLOC_INT()[locIndex+1]);
 		}
 			// Write a 1 to the address in memory (represents a boolean - will warp if 1)
 			// Game reverts warp address int back to 0 after a successful warp
-			tools.writeInt(WARP_ACTION_ADDRESS, 1);
+			gamedata.tools.writeInt(gamedata.getWARP_ACTION_ADDRESS(), 1);
 			
 		
 	    	// Reset the index once loop is finished
 	    	locIndex = 0;
 			
 		
-	    tools.close();
+	    gamedata.tools.close();
 	    
 
 	}

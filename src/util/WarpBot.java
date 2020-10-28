@@ -51,11 +51,13 @@ public class WarpBot  {
 			// Write an int to address in memory (represents a location to warp to)
 			gamedata.writeInt(gamedata.getWarpToAddress(), gamedata.getLocationInts()[locIndex+1]);
 		}
+			// Heal the character before warping
+			gamedata.fullHeal();
+			
 			// Write a 1 to the address in memory (represents a boolean - will warp if 1)
 			// Game reverts warp address int back to 0 after a successful warp
 			gamedata.writeInt(gamedata.getWarpActionAddress(), 1);
 			
-		
 	    	// Reset the index once loop is finished
 	    	locIndex = 0;
 			

@@ -5,13 +5,13 @@ import com.wgtools.mem.WGTools;
 
 public class GameData {
 
-	private final long WARP_ACTION_ADDRESS = 0x6FCAB0;
-	private final long WARP_TO_ADDRESS = 0x78F5A4;
-	private final long CURRENT_LOC_ADDRESS = 0x732F74;
-	private final long BASE_HP = 0x322A990;
-	private final long CURRENT_HP = 0x28BDED0;
+	protected final long WARP_ACTION_ADDRESS = 0x6FCAB0;
+	protected final long WARP_TO_ADDRESS = 0x78F5A4;
+	protected final long CURRENT_LOC_ADDRESS = 0x732F74;
+	protected final long BASE_HP = 0x322A990;
+	protected final long CURRENT_HP = 0x28BDED0;
 
-	private final String[] LOC_NAMES = 
+	protected final String[] LOC_NAMES = 
 		{ "Warping to Lobby..", "Warping to Pioneer 2..", "Warping to Forest 1..",
 		"Warping to Forest 2..", "Warping to Dragon..", "Warping to Caves 1..", "Warping to Caves 2..",
 		"Warping to Caves 3..", "Warping to De Ro Le..", "Warping to Mines 1..", "Warping to Mines 2..",
@@ -23,10 +23,10 @@ public class GameData {
 		return LOC_NAMES;
 	}
 
-	private final int[] LOC_INTS = { 15, 0, 1, 2, 11, 3, 4, 5, 12, 6, 7, 13, 8, 9, 10, 14 };
-	private int currentLoc;
+	protected final int[] LOC_INTS = { 15, 0, 1, 2, 11, 3, 4, 5, 12, 6, 7, 13, 8, 9, 10, 14 };
+	protected int currentLoc;
 	
-	private WGTools tools = new WGTools();
+	protected WGTools tools = new WGTools();
 	public int getCurrentLoc() {
 		return currentLoc;
 	}

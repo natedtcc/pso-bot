@@ -14,8 +14,8 @@ public class WarpBot extends GameData {
 	private MessageParser parser = new MessageParser();
 	String[][] messages;
 
-	// Set sleep time between warps
-
+	// Constructor
+	// Reads inputs from text 
 	public WarpBot() {
     	for (int i=0; i < LOC_NAMES.length; i++) {
     		input[i] = new Input();

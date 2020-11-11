@@ -23,8 +23,12 @@ public class MessageParser {
    * 
    * @return String[]
    */
+  
   public String[][] parseMessages() {
     String[][] parsed = new String[40][40];
+    
+    // For condition checks if array contains empty elements
+    
     for (int i = 0; i < this.messages.length && this.messages[i] != null; i++) {
       parsed[i] = this.messages[i].getMessage().split("");
     }

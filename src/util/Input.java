@@ -5,6 +5,15 @@
 public class Input {
   
   private String input;
+  
+  public Input() {
+	  
+  }
+
+  
+  public Input(String input) {
+	  this.input = input;
+  }
 
   /**
    * @return the message
